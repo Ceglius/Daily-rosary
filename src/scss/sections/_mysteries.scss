@@ -1,0 +1,54 @@
+@use '../abstract/vars' as *;
+@use '../abstract/mixins' as *;
+
+/*
+  ==== Mysteries ====
+*/
+
+.mysteries {
+  // .mysteries__container
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    border-bottom: 1px solid var(--dark-blue);
+    border-top: 1px solid var(--dark-blue);
+
+    @media (max-width: $breakpoint768) {
+      padding: 0 5px;
+    }
+  }
+
+  // .mysteries__title
+  &__title,
+  &__mystery {
+    @include flex-center();
+    @include adaptiveValue("font-size", 28, 16);
+    @include adaptiveValue("padding-bottom", 30, 20);
+    @include adaptiveValue("padding-top", 30, 20);
+    color: var(--dark-blue);
+    font-weight: var(--fw-semi-bold);
+  }
+
+  &__title {
+    border-right: 1px solid var(--dark-blue);
+
+    @media (max-width: $breakpoint480) {
+      justify-content: flex-start;
+    }
+  }
+
+  // .mysteries__mystery
+
+  &__mystery {
+    @include adaptiveValue("gap", 30, 15);
+    @media (max-width: $breakpoint480) {
+      justify-content: flex-end;
+    }
+  }
+
+  // .mysteries__number
+  &__number {
+    @include adaptiveValue("font-size", 34, 18);
+  }
+}

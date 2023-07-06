@@ -5,6 +5,15 @@
    ==== Main ====
 */
 
-.page  {
-   flex: 1 1 auto;
+.page {
+  flex: 1 1 auto;
+  @include flex-column($gap:0);
+  // .page__mysteries
+  &__mysteries {
+   
+  }
+   // .page__prayer
+  &__prayer {
+    flex: 1 1 auto;
+  }
 }

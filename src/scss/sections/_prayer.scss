@@ -1,0 +1,110 @@
+@use "../abstract/vars" as *;
+@use "../abstract/mixins" as *;
+
+/*
+   ==== Prayer ====
+*/
+.prayer {
+  // .prayer__grid
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+
+    @media (min-width: $breakpoint992) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  // .prayer__content
+
+  &__content {
+    overflow: auto;
+    flex: 1;
+    @include flex-center();
+    @include adaptiveValue("padding", 40, 25);
+    border-right: 1px solid var(--dark-blue);
+  }
+
+  // .prayer__item
+  &__item {
+    
+  }
+
+  // .prayer__title
+  &__title {
+    @include adaptiveValue("font-size", 40, 30);
+    margin-bottom: calc(15 / 40) * 1em;
+    color: var(--dark-blue);
+  }
+
+  // .prayer__text
+  &__text {
+    @include adaptiveValue("font-size", 20, 18);
+    line-height: 120%;
+    color: var(--body-co);
+    font-weight: var(--fw-light);
+
+    @media (min-width: $breakpoint768) {
+      line-height: 150%;
+    }
+  }
+
+  // .prayer__rosary
+
+  &__rosary {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: auto;
+    @include adaptiveValue('padding-bottom',30, 15,);
+  }
+}
+.rosary {
+   
+    
+  // .rosary__body
+  &__body {
+   margin-bottom: rem(60);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  // .rosary__start
+  &__start {
+    
+  }
+
+  // .rosary__cross
+  &__cross {
+    cursor: pointer;
+
+    &::before {
+        color: var(--light-blue);
+        @include adaptiveValue('font-size',120,60);
+    }
+
+  }
+  &__bead--larger,
+  &__bead {
+    margin-bottom: rem(10);
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  // .rosary__bead
+  &__bead {
+    @include adaptiveValue('width',40,30,);
+    @include adaptiveValue('height',40,30,);
+    background-color: var(--light-blue);
+
+  }
+
+  // .rosary__bead--larger
+  &__bead--larger {
+    @include adaptiveValue('width',50,40,);
+    @include adaptiveValue('height',50,40,);
+    background-color: var(--dark-blue);
+  }
+}

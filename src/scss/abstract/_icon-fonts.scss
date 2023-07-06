@@ -2,3 +2,33 @@
  ==== Iconmoon fonts ====
 */
 
+@font-face {
+    font-family: 'icons';
+    src:  url('../fonts/icons.woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="_icon-"], [class*=" _icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  ._icon-cross:before {
+    content: "\e900";
+  }
+  ._icon-rosary:before {
+    content: "\e901";
+  }
+  

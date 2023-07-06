@@ -90,7 +90,8 @@ const config = {
     new BeautifyHtmlWebpackPlugin(),
 
     new CopyPlugin({
-      patterns: [{ from: "src/images", to: "assets/images" }],
+      patterns: [{ from: "src/images", to: "assets/images" },
+      { from: "src/data", to: "assets/data" }],
     }),
   ],
 };
