@@ -79,7 +79,7 @@
 
   // .rosary__cross
   &__cross {
-    cursor: pointer;
+    cursor: grab;
 
     &::before {
         color: var(--light-blue);
@@ -90,7 +90,7 @@
   &__bead--larger,
   &__bead {
     margin-bottom: rem(10);
-    cursor: pointer;
+    cursor: grab;
     border-radius: 50%;
   }
   // .rosary__bead

@@ -33,3 +33,4 @@ function callcRosaryHeight() {
 
 
 const beads = document.querySelectorAll('.rosary__bead');
+
