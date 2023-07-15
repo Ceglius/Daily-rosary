@@ -13,10 +13,7 @@
     max-width: 100%;
     border-bottom: 1px solid var(--dark-blue);
     border-top: 1px solid var(--dark-blue);
-
-    @media (max-width: $breakpoint768) {
-      padding: 0 5px;
-    }
+    padding: 0;
   }
 
   // .mysteries__title
@@ -28,13 +25,22 @@
     @include adaptiveValue("padding-top", 30, 20);
     color: var(--dark-blue);
     font-weight: var(--fw-semi-bold);
+    line-height: 150%;
   }
 
   &__title {
     border-right: 1px solid var(--dark-blue);
+    position: relative;
 
-    @media (max-width: $breakpoint480) {
-      justify-content: flex-start;
+    span {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      background-color: rgba(36, 58, 155, 0.281);
+      transition: width 0.3s;
     }
   }
 
@@ -42,9 +48,8 @@
 
   &__mystery {
     @include adaptiveValue("gap", 30, 15);
-    @media (max-width: $breakpoint480) {
-      justify-content: flex-end;
-    }
+    margin-left: rem(20);
+    line-height: 150%;
   }
 
   // .mysteries__number

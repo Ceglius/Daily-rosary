@@ -40,8 +40,14 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    transform: scale(1);
     color: var(--white-co);
+    transition: transform .3s ease;
 
+    &.added {
+       transform: scale(1.2);
+       background-color: var(--dark-blue);
+    }
 
   }
 

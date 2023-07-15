@@ -26,9 +26,9 @@ export let isMobile = {
 };
 
 export function removeClasses(array, className) {
-  for (var i = 0; i < array.length; i++) {
-    array[i].classList.remove(className);
-  }
+  array.forEach(element => {
+    element.classList.remove(className);
+  });
 }
 
 export function placeholder(type, placeholder) {

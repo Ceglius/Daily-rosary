@@ -15,9 +15,13 @@
       {
         "prayer": "Glory Be",
         "text": "Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen."
-      },
+      }
+     
+    ],
+
+    "mysteries": [
       {
-        "prayer": "Joyful Mysteries",
+        "mystery": "Joyful Mysteries",
         "text": [
           "The Annunciation",
           "The Visitation",
@@ -27,7 +31,7 @@
         ]
       },
       {
-        "prayer": "Luminous Mysteries",
+        "mystery": "Luminous Mysteries",
         "text": [
           "The Baptism of Jesus in the Jordan",
           "The Wedding at Cana",
@@ -37,7 +41,7 @@
         ]
       },
       {
-        "prayer": "Sorrowful Mysteries",
+        "mystery": "Sorrowful Mysteries",
         "text": [
           "The Agony in the Garden",
           "The Scourging at the Pillar",
@@ -47,7 +51,7 @@
         ]
       },
       {
-        "prayer": "Glorious Mysteries",
+        "mystery": "Glorious Mysteries",
         "text": [
           "The Resurrection",
           "The Ascension",
